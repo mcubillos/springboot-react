@@ -12,7 +12,7 @@ module.exports = [
     },
     plugins: [
       new WebpackShellPlugin({
-        onBuildStart:['rm -rf ./dist'],
+        onBuildStart:['del-cli ./dist'],
         onBuildExit:['node ./script/copy.js']
       }),
     ],

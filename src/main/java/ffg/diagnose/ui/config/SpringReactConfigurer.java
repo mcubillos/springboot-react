@@ -13,8 +13,8 @@ public class SpringReactConfigurer implements WebMvcConfigurer   {
 	
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/js/**")
-                .addResourceLocations("classpath:/static/js/")
+        registry.addResourceHandler("/js/**", "/css/**")
+                .addResourceLocations("classpath:/static/js/", "classpath:/static/css/")
                 .resourceChain(true)
                 .addResolver(new PathResourceResolver())
                 .addResolver(new GzipResourceResolver());
