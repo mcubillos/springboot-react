@@ -7,7 +7,7 @@ import thunk from 'redux-thunk'
 import { createLogger } from 'redux-logger'
 
 import reducers from './reducers/index'
-import LoginApp from './components/LoginApp'
+import App from './components/App'
 
 export function render(requestPath, model) {
   const store = createStore(reducers,
@@ -16,7 +16,7 @@ export function render(requestPath, model) {
 
   let html = renderToString(
     <Provider store={store}>
-      <LoginApp />
+      <App />
     </Provider>
   )
 

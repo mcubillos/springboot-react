@@ -86,9 +86,10 @@ public class  ReactRenderer extends BasePooledObjectFactory<Invocable> {
     public Invocable create() {
     	NashornScriptEngine nashornScriptEngine = (NashornScriptEngine) nashornScriptEngineFactory.getScriptEngine();
         try {
-        	feedScript(nashornScriptEngine, "script/server.js");
+        	
             feedScript(nashornScriptEngine, "script/polyfill.js");
             feedScript(nashornScriptEngine, "script/render.js");
+            feedScript(nashornScriptEngine, "script/server.js");
             
         } catch (ScriptException e) {
             throw new RuntimeException("unable to load initial scripts", e);
