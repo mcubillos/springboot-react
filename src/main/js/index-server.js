@@ -7,7 +7,7 @@ import thunk from 'redux-thunk'
 import { createLogger } from 'redux-logger'
 
 import reducers from './reducers/index'
-import PostApp from './components/LoginApp'
+import LoginApp from './components/LoginApp'
 
 export function render(requestPath, model) {
   const store = createStore(reducers,

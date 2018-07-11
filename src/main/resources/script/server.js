@@ -5403,7 +5403,7 @@ function render(requestPath, model) {
   var html = (0, _server.renderToString)(_react2.default.createElement(
     _reactRedux.Provider,
     { store: store },
-    _react2.default.createElement(LoginApp, null)
+    _react2.default.createElement(_LoginApp2.default, null)
   ));
 
   return {
@@ -17161,9 +17161,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(100);
 
-var rootReducer = (0, _redux.combineReducers)({
-    index: index
-});
+var rootReducer = (0, _redux.combineReducers)({});
 
 exports.default = rootReducer;
 

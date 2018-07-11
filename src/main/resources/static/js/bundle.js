@@ -32276,9 +32276,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(100);
 
-var rootReducer = (0, _redux.combineReducers)({
-    index: index
-});
+var rootReducer = (0, _redux.combineReducers)({});
 
 exports.default = rootReducer;
 
